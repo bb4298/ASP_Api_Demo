@@ -1,0 +1,50 @@
+﻿@model DTO.SanPhamDTO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SanPhamDTO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SanPhamID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SanPhamID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenSanPham)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenSanPham)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GiaSanPham)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GiaSanPham)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TenDanhMuc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenDanhMuc)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.SanPhamID  }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
